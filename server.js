@@ -87,4 +87,7 @@ app.get("/m3u8-proxy", async (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log("Proxy on", PORT));
+
+app.listen(PORT, () => {
+  console.log("🔥 Proxy running on port " + PORT);
+});
